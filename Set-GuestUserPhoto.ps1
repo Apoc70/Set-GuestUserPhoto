@@ -18,7 +18,7 @@
     .DESCRIPTION
     
     This script set the AzureADThumbnailPhoto for guest users to a photo provided as jpg/png file. 
-    The file can be up to 100KB in size. This ist currently not checked in the script.
+    The file can be up to 100KB in size. This is currently not checked in the script.
     You can either update a single guest user or all guest users. When updating the user photo can 
     choose to set the photo forcibly or only if there is no photo set.
 
@@ -50,12 +50,12 @@
     SetIfNoPhotoExists = set the user photo only, if no user photo exists
   
     .EXAMPLE
-    Set the photo ExternalUser.png for all guest users, if no photo exists
+    Set the photo ExternalUser.png for all guest users if no photo exists
 
     .\Set-GuestUserPhoto.ps1 -FilePath D:\Photos\ExternalUser.png -GuestUsersToSelect All -UpdateMode SetIfNoPhotoExists
 
     .EXAMPLE
-    Set the photo ExternalUser.png for guest user JohnDoe@varunagroup.de, if no photo exists
+    Set the photo ExternalUser.png for guest user JohnDoe@varunagroup.de if no photo exists
 
     .\Set-GuestUserPhoto.ps1 -FilePath D:\Photos\ExternalUser.png -GuestUsersToSelect Single -UserPrincipalName JohnDoe@varunagroup.de
 
